@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title>Music Control</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/htmx.org@2.0.0"></script>
+</head>
+
+<body>
+  <button hx-get="/playpause" hx-target="#msg">Play / Pause</button>
+  <button hx-get="/prevtrack" hx-target="#msg">Prev track</button>
+  <button hx-get="/nexttrack" hx-target="#msg">Next track</button>
+  <br>
+  Repeat:
+  <input hx-get="/repeat/off" hx-target="#msg" type="radio" name="repeat" id="repeat_off" value="off">
+  <label for="repeat_off">Off</label>
+  <input hx-get="/repeat/all" hx-target="#msg" type="radio" name="repeat" id="repeat_all" value="all">
+  <label for="repeat_all">All</label>
+  <input hx-get="/repeat/one" hx-target="#msg" type="radio" name="repeat" id="repeat_one" value="one">
+  <label for="repeat_one">One</label>
+  <hr>
+  <div id="msg"></div>
+</body>
+
+</html>
