@@ -8,6 +8,6 @@ To run:
 bun run dev
 ```
 
-open http://<your ip>:8080
+open `http://<your ip>:8080`
 
 ![image](imgs/img01.jpg)
